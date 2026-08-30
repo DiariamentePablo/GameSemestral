@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var anim: AnimatedSprite2D = $CollisionShape2D/AnimatedSprite2D
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
 const SPEED = 120.0
 const JUMP_VELOCITY = -300.0
@@ -39,3 +39,7 @@ func _physics_process(delta: float) -> void:
 		elif direction < 0:
 			anim.flip_h = true
 	move_and_slide()
+
+
+func _on_child_entered_tree(node: Node) -> void:
+	pass # Replace with function body.
