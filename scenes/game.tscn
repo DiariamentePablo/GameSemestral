@@ -24,12 +24,12 @@ limit_top = -866
 limit_right = 1678
 limit_bottom = 206
 
-[node name="Area2D" parent="." instance=ExtResource("4_iywne")]
+[node name="LevelEnd" parent="." instance=ExtResource("4_iywne")]
 position = Vector2(878, -620)
-next_level = "forest"
+next_level = "factory"
 
-[node name="CollisionShape2D" parent="Area2D" index="0"]
+[node name="CollisionShape2D" parent="LevelEnd" index="0"]
 position = Vector2(0, -5.5)
 shape = SubResource("RectangleShape2D_p57ef")
 
-[editable path="Area2D"]
+[editable path="LevelEnd"]
